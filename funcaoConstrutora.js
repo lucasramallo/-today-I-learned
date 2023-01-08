@@ -7,6 +7,18 @@ function Team_member(name, id, office) {
     }
 }
 
+const programmer1 = new Team_member("Diego", "01","Frontend Developer");
+const programer2 = new Team_member("Filipe", "02", "Frontend Developer");
+const programer3 = new Team_member("Rodrigo", "03", "Backend Engineer");
+const programmer4 = new Team_member("Fernando", "04", "Backend Engineer");
+const programmer5 = new Team_member("William", "05", "BD Engineer")
+
+//console.log(programmer1.info())
+//console.log(programer2.info())
+//console.log(programer3.info())
+//console.log(programmer4.info())
+//.log(programmer5.info())
+
 function Customer(name, sobrenome, cpf, email, cep, uf) {
     this.name = name;
     this.sobrenome = sobrenome;
@@ -20,22 +32,23 @@ function Customer(name, sobrenome, cpf, email, cep, uf) {
         )
     }
 }
-
-const programmer1 = new Team_member("Diego", "01","Frontend Developer");
-const programer2 = new Team_member("Filipe", "02", "Frontend Developer");
-const programer3 = new Team_member("Rodrigo", "03", "Backend Engineer");
-const programmer4 = new Team_member("Fernando", "04", "Backend Engineer");
-const programmer5 = new Team_member("William", "05", "BD Engineer")
-
 const customer = new Customer("José", "Valim", "134.687.876-97", "jose.valim@gmail.com", "58121-000", "PB")
 
-//console.log(programmer1.info())
-//console.log(programer2.info())
-//console.log(programer3.info())
-//console.log(programmer4.info())
-//.log(programmer5.info())
-
 console.log(customer.data())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 function Person (name, cpf, number) {
     this.name = name
