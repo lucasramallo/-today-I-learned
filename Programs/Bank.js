@@ -4,7 +4,7 @@ let _account_number = 96875896
 let _agency = "000-1"
 let _password = "1234"
 let _balance = 765.87
-let show_pessoal_informations = false
+let show_pessoal_informations = true
 let show_the_balance = true
 
 function User (name, surname, account_number, agency, password) {
@@ -34,7 +34,7 @@ const user = new User(_name, _surname, _account_number,  _agency, _password)
 const balance = new Balance(_name, _balance)
 
 if(show_pessoal_informations == true && show_the_balance == true){
-    console.log(`Dashboard\nYour Balance: 956\n \nYour Informations:\n${user.data()}`)
+    console.log(`Dashboard\nYour Balance: ${balance.data_balance()}\n \nYour Informations:\n${user.data()}`)
 }else if(show_pessoal_informations == true) {
     console.log(user.data())
 }else if(show_the_balance == true){
