@@ -19,3 +19,4 @@ console.log(number2.toFixed(2).replace("12", "13"))
 
 let voto = 13
 console.log(String(voto).replace(voto, "22"))
+
