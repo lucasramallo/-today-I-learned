@@ -9,21 +9,27 @@ let _balance = 765.87
 
 //Opitons
 let show_pessoal_informations = true
-let show_the_balance = true
+let show_the_balance = false
 
-function User (id, name, surname, account_number, agency, password) {
+function Account (number, agency, password){
+    this.number = number;
+    this.agency = agency;
+    this.password = password;
+}
+
+function User (id, name, surname, account_number, account_agency, account_password) {
     this.id = id
     this.name = name;
     this.surname = surname;
     this.account_number = account_number;
-    this.agency = agency;
-    this.password = password;
+    this.account_agency = account_agency;
+    this.account_password = account_password;
     this.encrypt = () => {
-        let pass = this.password
+        let pass = this.account_password
         return(pass.replace(pass, "****"))
     } // encrypt the password 
     this.data = () => {
-        return(`NAME: ${this.name} ${this.surname}\nACCOUNT NUMBER: ${account_number}\nAGENCY: ${this.agency}\nPASSWORD: ${this.encrypt()}\nID: ${this.id}`)
+        return(`NAME: ${this.name} ${this.surname}\nACCOUNT NUMBER: ${this.account_number}\nAGENCY: ${this.account_agency}\nPASSWORD: ${this.encrypt()}\nID: ${this.id}`)
     }
 }
 
@@ -37,8 +43,8 @@ function Balance(id_user, user_name, user_surname, value){
     }
 }
 
-
-const user = new User(_id, _name, _surname, _account_number,  _agency, _password)
+const account = new Account(_account_number,  _agency, _password)
+const user = new User(_id, _name, _surname, account.number,  account.agency, account.password)
 const balance = new Balance(user.id, user.name, user.surname, _balance)
 
 if(show_pessoal_informations == true && show_the_balance == true){
