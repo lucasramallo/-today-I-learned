@@ -20,6 +20,7 @@
 // let voto = 13
 // console.log(String(voto).replace(voto, "22"))
 
+//transformar string em array
 let word = "lucas"
 let array = Array.from(word)
 let des = array[0]
