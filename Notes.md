@@ -11,3 +11,6 @@ Express, Nest, Fastfy
 Fastfy melhor que Express
 
 # tRPC
+
+# npm i eslint -D
+npm init @eslint/config
