@@ -4,21 +4,21 @@ let DataBase = {
 }
 
 //Faça sua requisição:
-// update = nome do curso - string
+// add = nome do curso - string
 // delete = index do curso - number
 // get = index do curso - number
-let request_type = "get"
-let curso = 1;
+let request_type = "add"
+let curso = "Medicina";
 
 
 //Controll
-if(request_type == "update"){
-    function Update(data, db) {
-        let update = db.push(data)
-        return update;
+if(request_type == "add"){
+    function Add(data, db) {
+        let add = db.push(data)
+        return add;
     }
 
-    Update(curso, DataBase.cursos)
+    Add(curso, DataBase.cursos)
 
     let cursos = DataBase.cursos;
 
