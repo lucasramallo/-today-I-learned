@@ -2,7 +2,6 @@ function App() {
     return console.log("You are on the App!")
 }
 
-
 function Login() {
     return console.log(("Logado"))
 }
