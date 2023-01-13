@@ -25,7 +25,6 @@ function Login(dataBaseDataUsername, dataBaseDataEmail, dataBaseDataPassword, id
     }
 }
 
-
 const login = new Login(nameInDataBase, emailInDataBase, passwordInDataBase, LoginUser, loginPassword)
 login.auth()
 
