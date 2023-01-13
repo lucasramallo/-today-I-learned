@@ -8,3 +8,4 @@ console.log(2 ** 3)
 //Atribuição
 let x = 1
 x += 1 // x = 2
+
