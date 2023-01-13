@@ -1,15 +1,49 @@
+const DataBase = {
+    username: 'Lucas',
+    email: 'lucas@gmail.com',
+    password: '1234'
+}
+let nameInDataBase = DataBase.username
+let emailInDataBase = DataBase.email
+let passwordInDataBase = DataBase.password
+
+
+//FRONT END LOGIN AREA REPRESENTATION
+let LoginUser = 'Lucas' // Input username/e-mail (string)
+let = loginPassword = 1234 // Input password (number or string)
+
+function Login(dataBaseDataUsername, dataBaseDataEmail, dataBaseDataPassword, identifier, _password) {
+    this.dataBaseData = dataBaseDataUsername;
+    this.dataBaseDataEmail = dataBaseDataEmail;
+    this.dataBaseDataPassword =dataBaseDataPassword;
+    this.identifier = identifier;
+    this._password = _password;
+    this.auth = () => {
+        if((this.identifier == dataBaseDataUsername || this.identifier == dataBaseDataEmail) && this._password == this.dataBaseDataPassword){
+            return true
+        } else return false
+    }
+}
+
+
+const login = new Login(nameInDataBase, emailInDataBase, passwordInDataBase, LoginUser, loginPassword)
+login.auth()
+
 function App() {
-    return console.log("You are on the App!")
+    console.log("✅Authenticated! You are on the App!🔥")
 }
 
-function Login() {
-    return console.log(("Logado"))
+function ErrorInAuth() {
+    console.log(("❌Incorrect Username/Email or Password. Please Try Again."))
 }
 
-function Register() {
-    return console.log("First you need to register")
-}
+let Auth = 0
 
-const Auth = false
+if(login.auth() == true) {
+    Auth = true
+} else if(login.auth() == false) Auth = false
 
-const authentication = Auth ? App() : Login()
+const authentication = Auth ? App() : ErrorInAuth()
+
+
+
