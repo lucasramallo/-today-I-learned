@@ -45,7 +45,6 @@ for(users in DB) {
     let data = (DB[users])
     let spacing = "-----------------"
     
-    
     switch(paramiter) {
         case paramiter = "name":
             console.log(data.name) 
