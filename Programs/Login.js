@@ -36,7 +36,7 @@ function ErrorInAuth() {
     console.log(("❌Incorrect Username/Email or Password. Please Try Again."))
 }
 
-let Auth = 0
+let Auth = null
 
 if(login.auth() == true) {
     Auth = true
