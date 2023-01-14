@@ -12,17 +12,13 @@ function transforme(val){
     if(fahrenheit){
 
         let noLeter = Number(val.replace('F', ''))
-       
         toCelsius = ((noLeter - 32) * 5/9)
-    
         console.log(toCelsius)
     }else
     
     if(celsius){
         let noLeter = Number(val.replace('C', ''))
-        
         toFahrenheit = (noLeter * 9/5 + 32)
-    
         console.log(toFahrenheit)
     }
 }
