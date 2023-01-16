@@ -56,7 +56,7 @@ function search (array) {
         console.log(`The Category ${numberOfCategory} has: ${books.length} Books`);
             // for(book of books){
             //     console.log(book)
-            // }
+            //}
         numberOfCategory++;
     };
 
