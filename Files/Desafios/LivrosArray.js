@@ -51,7 +51,6 @@ function search (array) {
     console.log(`Number of Categories: ${array.length}`);
 
     let numberOfCategory = 1;
-    
     for(categories of array){
         let books = categories.books;
         console.log(`The Category ${numberOfCategory} has: ${books.length} Books`);
