@@ -1,7 +1,7 @@
 /* 
     ∞ Buscando e contando dados em Arrays ∞
     Baseado no Array de Livros por Categoria abaixo, faça os seguintes desafios
-        • Contar o número de categorias e o número de livros em cada categoria
+        • TO DO Contar o número de categorias e o número de livros em cada categoria
         • Contar o número de autores
         • Mostrar livros do autor Auguto Cury
         • Transformar a função acima em uma função que irá receber o nome do autor e devolver os livros desse autor.
@@ -26,7 +26,7 @@ const booksByCategory = [
         ],
     },
     {
-        category: "Inteligência Emocional",
+        category: "Inteligência Emocional", 
         books: [
             {
                 title: "Você é Insubstituível",
@@ -43,3 +43,24 @@ const booksByCategory = [
         ],
     },
 ];
+
+const array = booksByCategory;
+
+function search (array) {
+
+    console.log(`Number of Categories: ${array.length}`);
+
+    let numberOfCategory = 1;
+    for(categories of array){
+        let books = categories.books;
+        console.log(`The Category ${numberOfCategory} has: ${books.length} Books`);
+            // for(book of books){
+            //     console.log(book)
+            // }
+        numberOfCategory++;
+    };
+
+    return search;
+}
+
+search(array);
