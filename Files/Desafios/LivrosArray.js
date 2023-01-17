@@ -54,13 +54,25 @@ function search (array) {
     for(categories of array){
         let books = categories.books;
         console.log(`The Category ${numberOfCategory} has: ${books.length} Books`);
-            // for(book of books){
-            //     console.log(book)
-            //}
         numberOfCategory++;
     };
+    return search;
+}
 
+function numberOfAuthors (array) {
+    
+    console.log("\nAuthosrs:")
+
+    for(categories of array){
+        let books = categories.books;
+        for(book of books){
+             // console.log(`\nAuthors:\n ${book.author}`)
+            let authors = book.author
+            console.log(authors)
+        } 
+    };
     return search;
 }
 
 search(array);
+numberOfAuthors(array);
