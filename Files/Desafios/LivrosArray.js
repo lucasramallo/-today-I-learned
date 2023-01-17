@@ -2,7 +2,7 @@
     ∞ Buscando e contando dados em Arrays ∞
     Baseado no Array de Livros por Categoria abaixo, faça os seguintes desafios
         • Contar o número de categorias e o número de livros em cada categoria
-        • //TODO Contar o número de autores
+        • Contar o número de autores
         • //TODO Mostrar livros do autor Auguto Cury
         • //TODO Transformar a função acima em uma função que irá receber o nome do autor e devolver os livros desse autor.
 */
@@ -46,33 +46,47 @@ const booksByCategory = [
 
 const array = booksByCategory;
 
-function search (array) {
+// function Categories (array) {
 
-    console.log(`Number of Categories: ${array.length}`);
+//     console.log(`Number of Categories: ${array.length}`);
 
-    let numberOfCategory = 1;
-    for(categories of array){
-        let books = categories.books;
-        console.log(`The Category ${numberOfCategory} has: ${books.length} Books`);
-        numberOfCategory++;
-    };
-    return search;
-}
+//     let numberOfCategory = 1;
+//     for(categories of array){
+//         let books = categories.books;
+//         console.log(`The Category ${numberOfCategory} has: ${books.length} Books`);
+//         numberOfCategory++;
+//     };
+//     return Categories;
+// }
 
-function numberOfAuthors (array) {
-    
+// function numberOfAuthors (array) {
+
+//     console.log("\nAuthosrs:")
+
+//     for(categories of array){
+//         let books = categories.books;
+//         for(book of books){
+//             let authors = book.author
+//             console.log(authors)
+//         } 
+//     };
+//     return Categories;
+// }
+
+
+function showAuthorBook(array, authorName) {
     console.log("\nAuthosrs:")
 
     for(categories of array){
         let books = categories.books;
         for(book of books){
-             // console.log(`\nAuthors:\n ${book.author}`)
             let authors = book.author
-            console.log(authors)
+            console.log(books)
+
         } 
     };
-    return search;
 }
 
-search(array);
-numberOfAuthors(array);
+// Categories(array);
+// numberOfAuthors(array);
+showAuthorBook(array, "Augusto Cury");
