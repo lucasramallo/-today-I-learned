@@ -90,3 +90,4 @@ function showAuthorBook(array, authorName) {
 // Categories(array);
 // numberOfAuthors(array);
 showAuthorBook(array, "Augusto Cury");
+
