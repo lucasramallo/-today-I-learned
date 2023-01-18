@@ -1,13 +1,13 @@
-const db = require('./DB')
+const db = require('./DB');
+const dataInput = require('./Input');
 
 let nameInDataBase = db.username
 let emailInDataBase = db.email
 let passwordInDataBase = db.password
 
-
-//FRONT END LOGIN AREA REPRESENTATION
-let LoginUser = 'Lucas' // Input username/e-mail (string)
-let = loginPassword = 1234 // Input password (number or string)
+//Recebe o valor do input
+let LoginUser = dataInput.User
+let = loginPassword = dataInput.Password 
 
 function Login(dataBaseDataUsername, dataBaseDataEmail, dataBaseDataPassword, identifier, _password) {
     this.dataBaseData = dataBaseDataUsername;
@@ -26,6 +26,7 @@ const login = new Login(nameInDataBase, emailInDataBase, passwordInDataBase, Log
 login.auth()
 
 function App() {
+    console.log(`Welcome ${nameInDataBase}`)
     console.log("✅Authenticated! You are on the App!🔥")
 }
 
