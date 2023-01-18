@@ -10,13 +10,13 @@ let LoginUser = dataInput.User
 let = loginPassword = dataInput.Password 
 
 function Login(dataBaseDataUsername, dataBaseDataEmail, dataBaseDataPassword, identifier, _password) {
-    this.dataBaseData = dataBaseDataUsername;
+    this.dataBaseDataUsername = dataBaseDataUsername;
     this.dataBaseDataEmail = dataBaseDataEmail;
-    this.dataBaseDataPassword =dataBaseDataPassword;
+    this.dataBaseDataPassword = dataBaseDataPassword;
     this.identifier = identifier;
     this._password = _password;
     this.auth = () => {
-        if((this.identifier == dataBaseDataUsername || this.identifier == dataBaseDataEmail) && this._password == this.dataBaseDataPassword){
+        if((this.identifier == this.dataBaseDataUsername || this.identifier == this.dataBaseDataEmail) && this._password == this.dataBaseDataPassword){
             return true
         } else return false
     }
@@ -26,8 +26,8 @@ const login = new Login(nameInDataBase, emailInDataBase, passwordInDataBase, Log
 login.auth()
 
 function App() {
-    console.log(`Welcome ${nameInDataBase}`)
-    console.log("✅Authenticated! You are on the App!🔥")
+    console.log("✅Authenticated! You are on the App!")
+    console.log(`\n🔥 Welcome again ${nameInDataBase}`)
 }
 
 function ErrorInAuth() {
