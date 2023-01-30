@@ -5,7 +5,6 @@ let nameInDataBase = db.username
 let emailInDataBase = db.email
 let passwordInDataBase = db.password
 
-//Recebe o valor do input
 let LoginUser = dataInput.User
 let = loginPassword = dataInput.Password 
 
