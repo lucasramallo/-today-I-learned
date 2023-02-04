@@ -4,7 +4,6 @@ const dataInput = require('./Input');
 let nameInDataBase = db.username
 let emailInDataBase = db.email
 let passwordInDataBase = db.password
-
 let LoginUser = dataInput.User
 let = loginPassword = dataInput.Password 
 
