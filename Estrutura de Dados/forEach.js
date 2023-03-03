@@ -26,10 +26,8 @@ const team = [
     }
 ]
 
-for(member in team) {
-    console.log(`Name: ${team[member].name}`)
-    console.log(`Function: ${team[member].function}`)
-    console.log(`Stack: ${team[member].stacks} \n`)
-}
 
-
+team.forEach((value) => {
+    console.log(`Name: ${value.name}`)
+    console.log(`Function: ${value.function} \n`)
+})
