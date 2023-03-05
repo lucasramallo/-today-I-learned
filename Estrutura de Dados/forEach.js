@@ -31,3 +31,5 @@ team.forEach((value) => {
     console.log(`Name: ${value.name}`)
     console.log(`Function: ${value.function} \n`)
 })
+
+
