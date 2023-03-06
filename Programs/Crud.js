@@ -6,6 +6,13 @@ const DataBase = {
             cpf: "132.112.321.32", 
             level: "junior", 
             salario: "3.500"
+        },
+        {
+            name: "Diego Martins", 
+            age: 37, 
+            cpf: "273.998.142.01", 
+            level: "senior", 
+            salario: "12.850"
         }
     ]
 } 
@@ -15,10 +22,8 @@ const teamMembers = DataBase.Members
 const Member = (teamMembers) => {
     
    for(member of teamMembers){
-        return(`Nome: ${member.name}\nIdade: ${member.age}\nCpf: ${member.cpf}\nNivel: ${member.level}\nSalário: R$${member.salario}`)
+        console.log(`Nome: ${member.name}\nIdade: ${member.age}\nCpf: ${member.cpf}\nNivel: ${member.level}\nSalário: R$${member.salario}\n`)
     }
 
 }
-
-
-console.log(Member(teamMembers))
+Member(teamMembers)
