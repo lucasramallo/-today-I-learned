@@ -13,6 +13,13 @@ const DataBase = {
             cpf: "273.998.142.01", 
             level: "senior", 
             salario: "12.850"
+        },
+        {
+            name: "Filipe Fernandes", 
+            age: 28, 
+            cpf: "745.208.624.75", 
+            level: "pleno", 
+            salario: "7.200"
         }
     ]
 } 
