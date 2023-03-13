@@ -3,13 +3,15 @@ const app = express();
 
 app.set("view engine", "ejs");
 
-app.get("/", function(req, res){
+app.get("/", (req, res) => {
     res.render("index")
 });
 
-app.get("/sobre", function(req, res){
+app.get("/sobre", (req, res) => {
     res.render("about")
 });
 
-app.listen(8080);
-console.log("✅Running!🔥")
+const port = 8080
+app.listen(port);
+
+console.log(`✅Running! In port ${port}🔥`)
