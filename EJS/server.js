@@ -11,7 +11,7 @@ app.get("/sobre", (req, res) => {
     res.render("about");
 });
 
-const port = 8080;                                                                                                                     
+const port = 8080;
 app.listen(port);
 
 console.log(`✅Running! In port ${port}🔥`);
