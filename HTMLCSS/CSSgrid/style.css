@@ -1,0 +1,52 @@
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #7159c1;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 20vh 70vh 10vh;
+    grid-template-areas: "header header" "main aside" "footer footer";
+}
+
+header {
+    background-color: yellow;
+    grid-area: header;
+}
+
+main {
+    background-color: blue;
+    grid-area: main;
+
+}
+
+aside {
+    background-color: green;
+    grid-area: aside;
+
+}
+
+footer {
+    background-color: red;
+    grid-area: footer;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.menu ul {
+    display: flex;
+    gap: 50px;
+}
