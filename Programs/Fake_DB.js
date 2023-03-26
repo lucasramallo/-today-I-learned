@@ -4,9 +4,9 @@ let DataBase = {
 }
 
 //Faça sua requisição:
-// add = nome do curso - string
-// delete = index do curso - number
-// get = index do curso - number
+// add = nome do curso (string)
+// delete = index do curso (number)
+// get = index do curso (number)
 let request_type = "add"
 let curso = "Medicina";
 
