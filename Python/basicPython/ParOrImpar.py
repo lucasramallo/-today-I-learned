@@ -6,4 +6,4 @@ restOfDivision = stringToNumber % 2
 if restOfDivision == 0:
     print('This number is PAIR.')
 else: 
-    print('This number is ODD.')
+    print('This number is ODD.')   
