@@ -21,5 +21,5 @@ end
 
 Cadastro.name("Lucas", "Ramalho")
 Cadastro.idade("18", "23/12/2004")
-Cadastro.cpf("132.256.934.91")
+Cadastro.cpf("132.246.934.91")
 Cadastro.endereco("Lagoa-Seca")
