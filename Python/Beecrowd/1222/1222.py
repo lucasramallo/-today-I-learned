@@ -1,22 +1,37 @@
+import math
+
 while True:
   try:
     N, L, C = input().split(" ")
-    text = input()
+    text = input().split()
 
     N = int(N)
     L = int(L)
     C = int(C)
 
-    maximoDeCaracteres = L * C
-    numeroDeCaracteresDoTexto = len(text)
+    line = ""
+    lines = 1
 
-    numeroDePaginas = numeroDeCaracteresDoTexto // maximoDeCaracteres
+    for word in text:
+         if line == "":
+            line = word
+         else:
+            if len(line + " " + word) > C:
+               lines += 1
+               line = word
+            else:
+               line += " " + word
 
-    print(numeroDePaginas)
+    result = math.ceil(lines/L)
+
+    print(result)
 
   except EOFError:
     break
 
-#n - o número de palavras do conto de Machado
+#n - o número de words do conto de Machado
 #l - o número máximo de linhas por página
 #c - número máximo de caracteres por linha
+
+
+
