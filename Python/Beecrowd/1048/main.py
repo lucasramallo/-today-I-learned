@@ -5,6 +5,7 @@
 # Acima de 2000.00
 
 salary = float(input())
+
 percentual = None
 newSalary = None
 reajuste = None
