@@ -3,7 +3,7 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Main",
+            "name": "Current File",
             "request": "launch",
             "mainClass": "Main",
             "projectName": "Java_b99e5a40"
