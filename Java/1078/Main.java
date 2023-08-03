@@ -9,6 +9,5 @@ public class Main {
         for(int i = 1; i <= 10; i++){
             System.out.println(String.format("%d x %d = %d", i, N, i * N));
         }
- 
     }
 }
