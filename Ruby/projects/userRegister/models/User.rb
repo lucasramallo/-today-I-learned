@@ -15,4 +15,8 @@ class User
         puts("Contato: #{@contact}")
         puts("Endereço: #{@adress}")
     end
+
+    def save_format()
+       ("id: #{@id}, name: #{@fullName}, e-mail: #{@email}, contato: #{@contact}, endereço: #{@adress}")
+    end
 end
